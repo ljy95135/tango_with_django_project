@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rango</title>
+    {% comment %}
+        <link rel="stylesheet" href="{% static "css/base.css" %}" />
+        <script src="{% static "js/jquery.js" %}"></script>
+    {% endcomment %}
+</head>
+<body>
+    <h1>Rango says...</h1>
+    <div>
+        hey there partner! <br />
+        <strong>{{ boldmessage }}</strong> <br />
+    </div>
+
+    <div>
+        <img src="{% static "rango/images/rango.jpg" %}"
+             alt="Picture of Rango"><br/>
+        <img src="{% static "images/help.jpg" %}"
+             alt="Picture of Rango"><br/>
+        <a href="/rango/about/">About</a> <br />
+    </div>
+</body>
+</html>
