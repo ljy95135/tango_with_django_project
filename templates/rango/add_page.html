@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Rango</title>
-</head>
-<body>
+{% extends 'rango/base.html' %}
+
+{% block title_block %}
+    Add Page
+{% endblock %}
+
+{% block body_block %}
     {% if category %}
         <h1>Add a page</h1>
         <form id="page_form" method="post" action="/rango/category/{{ category.slug }}/add_page/">
@@ -23,5 +23,7 @@
     {% else %}
         There is no such a category.
     {% endif %}
-</body>
-</html>
+{% endblock %}
+<body>
+
+
